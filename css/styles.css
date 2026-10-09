@@ -1,5 +1,5 @@
 /* ================================
-   JAINECK'S DIGITAL WORLD
+   MUKUKA'S DIGITAL WORLD
    ================================ */
 
 * {
@@ -14,8 +14,8 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background: #020e0f;
-    color: rgb(25, 159, 147);
+    background: #450482;
+    color: #ffffff;
     line-height: 1.6;
 }
 
@@ -478,4 +478,71 @@ footer {
         letter-spacing: 2px;
     }
 
+}
+
+/* ==== HERO TEXT ==== */
+.hero-subtitle {
+  color: #38bdf8;
+}
+
+.hero-description {
+  color: #e2e8f0;
+}
+
+/* ==== HERO BUTTONS ==== */
+.primary-button {
+  background-color: #38bdf8;
+  color: #0a1128;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: #38bdf8;
+  border: 2px solid #38bdf8;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  opacity: 0.85;
+}
+
+/* ==== THEME TOGGLE BUTTON ==== */
+.theme-toggle {
+  background-color: #38bdf8;
+  color: #0a1128;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ==== DARK THEME ==== */
+body.dark-theme {
+  background-color: #000000;
+  color: #f1f5f9;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3 {
+  color: #38bdf8;
+}
+
+body.dark-theme .hero-subtitle {
+  color: #7dd3fc;
+}
+.hero h1 span {
+    color: #38bdf8;
 }
