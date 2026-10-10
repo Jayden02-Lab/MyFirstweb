@@ -129,3 +129,28 @@ if (contactForm) {
     contactForm.reset();
   });
 }
+/* =========================================
+   FEATURE 5: SCROLL SPY (Active Nav Link)
+   ========================================= */
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        // 150px offset accounts for the fixed nav bar and some breathing room
+        if (window.scrollY >= sectionTop - 150) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach((link) => {
+        link.classList.remove("active");
+        // Match the nav link href (e.g. #about) to the section id (e.g. about)
+        if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+        }
+    });
+});
